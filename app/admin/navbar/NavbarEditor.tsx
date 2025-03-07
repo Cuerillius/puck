@@ -32,7 +32,9 @@ export function NavbarEditor({ data }: { data: Partial<Data> }) {
       config={navbarConfig}
       data={data}
       overrides={{
-        headerActions: ({ children }) => <HeaderActions>{children}</HeaderActions>,
+        headerActions: ({ children }) => (
+          <HeaderActions>{children}</HeaderActions>
+        ),
       }}
       headerTitle={`Editing Navbar`}
       onPublish={async (data) => {

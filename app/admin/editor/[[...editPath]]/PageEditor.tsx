@@ -58,7 +58,7 @@ export function PageEditor({
       headerPath={path}
       overrides={{
         headerActions: ({ children }) => (
-          <HeaderActions path={path} >{children}</HeaderActions>
+          <HeaderActions path={path}>{children}</HeaderActions>
         ),
       }}
       headerTitle={`Editing: ${data.root?.props?.title || ""}`}
